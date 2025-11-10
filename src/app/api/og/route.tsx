@@ -11,7 +11,7 @@ export async function GET(req: Request) {
     const url = new URL(req.url);
     const { searchParams } = url;
 
-    const text = searchParams.get('text');
+    const text = searchParams.get('text') ?? '';
 
     const bg = `${url.origin}/placeholder.png`;
 
