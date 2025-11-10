@@ -17,7 +17,7 @@ export async function GET(req: Request) {
 
     const inter = await interExtraBold;
 
-    const IMAGE_WIDTH = 800;
+    const IMAGE_WIDTH = 644;
     const OUTER_PADDING_X = 71;
     const INNER_PADDING_X = 0;
     const SIDE_PADDING = OUTER_PADDING_X + INNER_PADDING_X;
@@ -84,7 +84,7 @@ export async function GET(req: Request) {
                             whiteSpace: 'pre-wrap',
                             wordBreak: 'break-word',
                             overflow: 'hidden',
-                            maxWidth: '800px',
+                            maxWidth: '644px',
                             lineClamp: 3,
                             maxHeight: maxHeightPx,
                             display: '-webkit-box',
