@@ -25,7 +25,7 @@ export async function GET(req: Request) {
 
     const BASE_SIZE = 76;
     const MIN_SIZE = 28;
-    const AVG_CHAR_WIDTH = 0.56;
+    const AVG_CHAR_WIDTH = 0.4;
     const SAFETY = 0.95;
 
     const norm = text.replace(/\s+/g, ' ').trim();
