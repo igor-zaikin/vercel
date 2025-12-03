@@ -11,14 +11,14 @@ export async function GET(req: Request) {
     const url = new URL(req.url);
     const { searchParams } = url;
 
-    const text = searchParams.get('text');
-    const imageOneSrc = searchParams.get('image1');
-    const imageTwoSrc = searchParams.get('image2');
-    const imageThreeSrc = searchParams.get('image3');
-    const imageFourSrc = searchParams.get('image4');
-    const imageFiveSrc = searchParams.get('image5');
-    const imageSixSrc = searchParams.get('image6');
-    const imageSevenSrc = searchParams.get('image7');
+    const text = searchParams.get('text') ?? '';
+    const imageOneSrc = searchParams.get('image1') ?? '';
+    const imageTwoSrc = searchParams.get('image2') ?? '';
+    const imageThreeSrc = searchParams.get('image3') ?? '';
+    const imageFourSrc = searchParams.get('image4') ?? '';
+    const imageFiveSrc = searchParams.get('image5') ?? '';
+    const imageSixSrc = searchParams.get('image6') ?? '';
+    const imageSevenSrc = searchParams.get('image7') ?? '';
 
     const bgSrc = `${url.origin}/pixom-masonry-bg.png`;
 

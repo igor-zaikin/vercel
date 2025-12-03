@@ -11,9 +11,9 @@ export async function GET(req: Request) {
     const url = new URL(req.url);
     const { searchParams } = url;
 
-    const text = searchParams.get('text');
-    const imageOneSrc = searchParams.get('image1');
-    const imageTwoSrc = searchParams.get('image2');
+    const text = searchParams.get('text') ?? '';
+    const imageOneSrc = searchParams.get('image1') ?? '';
+    const imageTwoSrc = searchParams.get('image2') ?? '';
 
     const bgSrc = `${url.origin}/pixom-portrait-bg.png`;
     const overlaySrc = `${url.origin}/pixom-portrait-overlay.png`;
